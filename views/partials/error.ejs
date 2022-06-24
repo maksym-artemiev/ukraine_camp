@@ -1,0 +1,21 @@
+<div class="container">
+  <% if (error && error.length) { %>
+  <div class="row mt-3">
+    <div class="col-12">
+      <div
+        id="error"
+        class="alert alert-danger alert-dismissible fade show"
+        role="alert"
+      >
+        <%= error %>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</div>
