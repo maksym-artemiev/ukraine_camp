@@ -168,6 +168,8 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render('error', { err });
 })
 
-app.listen(1994, () => {
-    console.log('Serving on port 1994');
+const port = process.env.PORT || 1994;
+
+app.listen(port, () => {
+    console.log(`App is serving on port ${port}`);
 })
