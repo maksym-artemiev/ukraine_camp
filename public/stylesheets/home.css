@@ -26,7 +26,7 @@ body {
 }
 
 .nav-link.active {
-    color: white;
+    color: white !important;
     border-bottom-color: white;
 }
 
@@ -34,4 +34,20 @@ body {
 .btn-secondary:hover {
     color: #333;
     text-shadow: none;
+}
+
+.navbar-toggler {
+    color: aliceblue;
+}
+
+@supports (display: flex) {
+    @media screen and (max-width: 800px) {
+        .nav-link {
+            border-bottom: none;
+            margin-left: 0;
+        }
+        h3 {
+            display: none;
+        }
+    }
 }
